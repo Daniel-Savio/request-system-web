@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Univers;
+  src: url("../public/fonts/univers-lt-47-condensed-light.ttf");
+}
