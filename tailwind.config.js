@@ -6,6 +6,13 @@ export default {
       fontFamily: {
         univers: ["Univers"],
       },
+      colors: {
+        treetech: "#008242",
+        background: "bg-slate-800",
+      },
+      backgroundImage: {
+        pattern: "url(/tailwind.avif)",
+      },
     },
   },
   plugins: [],
