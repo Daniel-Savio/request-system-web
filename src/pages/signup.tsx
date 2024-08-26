@@ -1,10 +1,10 @@
 import logo from "../assets/logo da tt-Branco-Verde.png";
-import LoginForm from "../components/loginForm";
+import SignUpForm from "../components/signUpForm";
 import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from "../../public/login.json";
 import { useRef } from "react";
 
-export default function Login() {
+export default function Signup() {
   const animationRef = useRef<LottieRefCurrentProps>(null);
 
   return (
@@ -16,7 +16,7 @@ export default function Login() {
         </h1>
       </header>
       <div className="w-fit m-auto relative">
-        <LoginForm></LoginForm>
+        <SignUpForm></SignUpForm>
         <Lottie
           onComplete={() => {
             animationRef.current?.goToAndPlay(50, true);
