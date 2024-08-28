@@ -4,7 +4,7 @@ import Lottie, { LottieRefCurrentProps } from "lottie-react";
 import animationData from "../../public/login.json";
 import { useRef } from "react";
 
-export default function Signup() {
+export default function SignUp() {
   const animationRef = useRef<LottieRefCurrentProps>(null);
 
   return (
@@ -16,7 +16,7 @@ export default function Signup() {
         </h1>
       </header>
       <div className="w-fit m-auto relative">
-        <SignUpForm></SignUpForm>
+        <SignUpForm />
         <Lottie
           onComplete={() => {
             animationRef.current?.goToAndPlay(50, true);

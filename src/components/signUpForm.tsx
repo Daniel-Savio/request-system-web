@@ -1,6 +1,8 @@
 import { Envelope, LockKey } from "phosphor-react";
 import { Link } from "react-router-dom";
+import { Combobox } from "./ui/combobox";
 
+const list = ["Batata", "Arroz"];
 export default function SignUpForm() {
   return (
     <div className="m-auto">
@@ -14,6 +16,7 @@ export default function SignUpForm() {
             {" "}
             E-mail
           </label>
+
           <div className="border rounded p-2 flex gap-2 items-center w-fit">
             <Envelope className="size-5 text-zinc-300" />
             <input
@@ -43,6 +46,10 @@ export default function SignUpForm() {
               required
             />
           </div>
+        </div>
+
+        <div>
+          <Combobox list={list} placeholderValue="Escolha o setor" />
         </div>
 
         <button
